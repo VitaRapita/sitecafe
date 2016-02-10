@@ -1,0 +1,294 @@
+@import "reset.less";
+
+html, body {
+    height: 100%;
+}
+
+body{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: black;
+    
+    background: #8d95a8;
+    background-image:url(../img/fon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width:100%;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.menu {
+	height: 100px;
+}
+
+// *****Navigation*****
+   
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1em;
+    color: #575e70;
+    font-weight: bold;  
+}               
+                
+.navbar ul li :last-child {
+    border-bottom: 0;
+}
+
+/* цвет фона и рамки навигационного меню */
+.navbar-default {
+    background-color: #bdc3d1;
+    text-align: center;
+}
+
+/* Цвет пунктов навигационного меню */
+.navbar-default .navbar-nav > li > a {
+    color: #575e70;
+    background-color: #bdc3d1;
+    text-transform: capitalize;
+}
+/* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #828999;
+}
+/* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #575e70;
+}
+/* Цвет и фон открытого пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #575e70;
+}
+/* CSS стили для мобильных устройств */
+/* Цвет рамки у кнопки, которая открывает меню */
+.navbar-default .navbar-toggle {
+    border-color: #828999;
+    padding-right: 18%;
+    margin-right: -25%;
+}
+/* Цвет фона кнопки (которая открывает меню) при поднесении к ней курсора мышки или при нахождении её в фокусе */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #828999;
+}
+/* Цвет полосочек в кнопочке, которая открывает меню */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+/* Цвет пунктов меню в раскрывающихся списках */
+@media (max-width: 700px) {
+    .navbar-default .navbar-nav .open.dropdown-menu > li > a {
+        color: #575e70;
+  }
+/* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fff;
+        background-color: #828999;
+    }
+}
+
+
+.dropdown:hover > .dropdown-menu { 
+    display: block; 
+}
+
+#foto {
+    max-width: 1360px;
+}
+
+.list{
+    width: 33.33%;
+    float: left;
+    padding-left: 10em;
+    color: #fff;
+    margin-top: -2em;
+    
+}
+
+.list button { 
+    background-color: #909dbc;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    padding: 0.5em 2em 0.5em 2em;
+
+}
+
+
+.list button:hover, 
+.list button:focus { 
+    background-color: #cbd1e2;
+    color: black;
+}
+
+.foto {
+    width: 33.33%;
+    overflow: hidden;
+	text-align: center;
+	color: #bec3cf;
+} 
+
+.foto img {
+	width: 70%;
+	height: auto;
+}
+
+@media (max-width: 1100px) {
+    .foto img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.foto hr {
+	margin-top: -0.5em; 
+	width: 68%;
+	color: #bec3cf;
+	background: #bec3cf;
+}
+
+.social li {
+	display: inline-block;	
+}
+
+.social li img {
+	width: 100%;
+	height: auto;
+	margin: -0.1em;
+}
+#stars {
+	width: 5em;
+	height: 1.2em;
+    
+} 
+
+.search {
+    width: 33.33%;
+    float: right;
+    margin-right: 2em;
+    margin-top: -2em;  
+}
+
+.search li {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.7em;
+    line-height: 1.2em;
+    padding-left: 2%;
+}
+
+.search input {
+    float: left;
+    padding-top: -1em;
+	width: 45%;
+    font-size: 0.7em;
+    height: 4%;
+	background-color: #a4acbe;
+	color: #fff;
+	border: 2px solid #b2bacd;
+    ::-webkit-input-placeholder {color:#fff;}
+    :-moz-placeholder,
+    ::-moz-placeholder {color:#999;}
+    :-ms-input-placeholder {color:#999;}
+}
+
+@media (max-width: 1100px) {
+    .search li {
+        float: right;
+        margin-top: -20%;
+        margin-right: 5%;
+    }
+
+    .search input{
+       margin-top: -20%; 
+    } 
+}
+
+@media (max-width: 1100px) {
+    .list {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .foto {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20%;
+        margin-top: 10%;
+    }
+    .search {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    } 
+}
+
+@media (max-width: 900px) {
+    .list,
+    .foto {
+        float: left;
+    } 
+}
+
+.jp-audio {
+    margin: 0 auto;
+    width: 33.33%;
+    background-color: #9ba8c7;
+    float: left;
+    border-right: 2px dotted #b9c3da;
+    border-left: 2px dotted #b9c3da;
+    color:#585f71;
+    opacity: 0.7
+}
+
+
+.jp-interface {
+    position: fixed;
+}
+
+.jp-playlist {
+    background-color: #9ba8c7;
+    float: left;
+}
+
+.player {
+    margin-top: 3%;
+    margin-bottom: 12%;
+    margin-left: 36%;
+    width: 29%;
+    opacity: 0.7;
+    border: 1px solid;
+}
+
+@media (max-width: 700px) {
+    .player {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20%;
+    }
+}
